@@ -9,7 +9,7 @@ chai.use(chaiHttp);
 describe("/GET", () => {
   it("returns the homepage", (done) => {
     chai
-      .request(`http://localhost:3000`)
+      .request(`http://localhost:8080`)
       .get("/")
       .end((err, res) => {
         res.should.have.status(200);
